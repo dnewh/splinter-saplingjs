@@ -1,9 +1,9 @@
 {
   "name": "splinter-saplingjs",
-  "private": true,
   "version": "0.0.0-alpha",
   "author": "Cargill Incorporated",
   "license": "Apache-2.0",
+  "private": false,
   "main": "dist/index.js",
   "dependencies": {
     "@babel/parser": "^7.8.3",
