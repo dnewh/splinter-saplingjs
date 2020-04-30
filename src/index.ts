@@ -46,6 +46,15 @@ interface GetSharedConfig {
   (): SharedConfig;
 }
 
+interface SaplingRoute {
+  name: String;
+  route: String;
+}
+
+interface GetSaplingRoutes {
+  () : SaplingRoute[];
+}
+
 interface GetUser {
   (): User;
 }
@@ -72,6 +81,7 @@ interface HideCanopy {
 interface Canopy {
   registerApp: RegisterApp;
   registerConfigSapling: RegisterConfigSapling;
+  getSaplingRoutes: GetSaplingRoutes;
   getUser: GetUser;
   setUser: SetUser;
   setKeys: SetKeys;
@@ -98,6 +108,7 @@ const canopy = assertAndGetWindowCanopy();
 export const {
   registerApp,
   registerConfigSapling,
+  getSaplingRoutes,
   getUser,
   setUser,
   setKeys,
